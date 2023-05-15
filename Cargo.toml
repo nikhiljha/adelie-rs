@@ -1,0 +1,20 @@
+[package]
+name = "adelie"
+version = "0.1.0"
+edition = "2021"
+
+# See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
+
+[dependencies]
+async-trait = "0.1.68"
+color-eyre = "0.6.2"
+futures = "0.3.28"
+hyper = "0.14.26"
+octocrab = { version = "0.21.0", features = ["default", "tokio"] }
+reqwest = { version = "0.11.17", features = ["rustls", "rustls-tls"] }
+serde = { version = "1.0.163", features = ["derive"] }
+serde_yaml = "0.9.21"
+thiserror = "1.0.40"
+tokio = { version = "1.28.1", features = ["full"] }
+toml_edit = { version = "0.19.8", features = ["serde"] }
+url = "2.3.1"
